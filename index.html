@@ -1,0 +1,99 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Metal3 Landing Page</title>
+  </head>
+
+  <body>
+    <nav>
+      <div>
+      <a href="#">
+        <img src="./images/logo.png" class="logo">
+      </a>
+      </div>
+      <ul>
+        <li class ="nav-item"><a href="#overview" class="nav-link">Overview</a></li>
+        <li class ="nav-item"><a href="#goals" class="nav-link">Goals</a></li>
+        <li class ="nav-item"><a href="#mission" class="nav-link">Mission</a></li>
+        <li class ="nav-item"><a href="#components" class="nav-link">Components</a></li>
+        <li class ="nav-item"><button class="button-1">Get Started</button></li>
+      </ul>
+    </nav>
+
+    <section >
+      
+       <div class="content" id="overview-section">
+        
+          
+        
+        <div class="info">
+          <h2>Overview</h2>
+          <p>
+            Metal³ (pronounced Metal Kubed) is a project that provides components to enable the management of bare metal hosts for Kubernetes. It functions as a Kubernetes application, meaning it is managed and operated through Kubernetes interfaces.  It provides a unified API for managing bare metal resources, allowing users to easily provision, configure, and manage their physical servers and other bare metal resources. Metal3 also provides a unified platform for managing virtual machines, allowing users to easily provision, configure, and manage their virtual machines.
+          </p>
+          
+        </div>
+        </div>
+      
+      
+    </section>
+
+    <section>
+      <div class="content" id="goals-section">
+        <div class="info">
+          <h2>Goals</h2>
+          <p>
+            <ol>  <li> To provide an open source, extensible, and production-ready bare metal provisioning and lifecycle management platform for Kubernetes. 
+<li> To enable users to quickly and easily deploy and manage bare metal clusters in a secure and reliable manner.</li>
+<li> To provide a platform that is easy to use and maintain, and that is highly available and scalable.</li> 
+<li> To provide a platform that is compatible with existing Kubernetes distributions and tools.</li> 
+<li> To provide a platform that is extensible and customizable to meet the needs of different users.</li> 
+<li> To provide a platform that is secure and compliant with industry standards.</li> 
+<li> To provide a platform that is cost-effective and efficient.</li>
+</ol>
+          </p>
+          
+        </div>
+        
+      </div>
+      
+    </section>
+
+    <section>
+      <div class="content" id="mission-section">
+        <div class="info">
+          <h2>Mission</h2>
+          <p>
+           The mission of the metal3.io project is to provide an open source, extensible, and easy-to-use platform for managing bare metal servers. The project aims to provide a comprehensive set of tools and APIs to enable users to quickly and easily provision, configure, and manage bare metal servers. The project also seeks to provide a platform for the development of new features and capabilities for managing bare metal servers. 
+          </p>
+          
+        </div>
+        
+      </div>
+      
+    </section>
+
+    <section>
+      <div class="content" id="components-section">
+        <div class="info">
+          <h2>Components</h2>
+          <p>
+           <ol> 
+<li> Machine Controller-Bare metal actuator</li>
+      <p>The Bare Metal Actuator is the first element of the system, which is an implementation of the Machine Actuator interface from the cluster-api project. This actuator responds to changes in Machine objects and serves as a customer of the BareMetalHost custom resources managed by the Bare Metal Operator.</p> 
+<li> Bare metal operator</li> 
+     <p>It includes a Controller for a new Custom Resource, BareMetalHost. This custom resource represents an inventory of known (configured or automatically discovered) bare metal hosts. When a Machine is created the Bare Metal Actuator will claim one of these hosts to be provisioned as a new Kubernetes node. In response to BareMetalHost updates, the controller will perform bare metal host provisioning actions as necessary to reach the desired state. The creation of the BareMetalHost inventory can be done in two ways: Manually via creating BareMetalHost objects. Optionally, automatically created via a bare metal host discovery process. For more information about Operators, see the operator-sdk.</p> 
+<li> Bare metal management pods</li> 
+     <p>The operator manages a set of tools for controlling the power on the host, monitoring the host status, and provisioning images to the host. These tools run inside the pod with the operator, and do not require any configuration by the user.Bare metal management pods are used to manage the underlying physical infrastructure of a Kubernetes cluster. These pods provide a way to manage the physical resources of a cluster, such as servers, storage, networking, and other hardware components. They also provide a way to monitor and manage the health of the cluster, as well as to deploy and manage applications on the cluster. The pods can be used to automate the provisioning and configuration of the physical infrastructure, as well as to monitor and manage the health of the cluster.</p>
+</ol> 
+          </p>
+          
+        </div>
+        
+      </div>
+      
+    </section>
+  </body>
